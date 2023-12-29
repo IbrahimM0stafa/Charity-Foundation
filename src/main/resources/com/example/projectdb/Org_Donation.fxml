@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectdb.Org_Donation_Controller">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0">
+      <ImageView cache="true" fitHeight="500.0" fitWidth="700.0" mouseTransparent="true" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Images/360_F_285562393_6qKnDTHWmOHjMo8hCC2dp1MIvR0NvTUs.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="159.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="353.0" prefWidth="416.0" style="-fx-background-color: black; -fx-background-radius: 30;">
          <children>
-            <TextField fx:id="QuantityTxt_Org_Donation" layoutX="276.0" layoutY="238.0" onAction="#Quantity_Txt_OrgDonation" promptText="Quantity" />
-            <Button fx:id="DonateBtn_Org_Donation" layoutX="316.0" layoutY="294.0" mnemonicParsing="false" onAction="#Donate_Btn_OrgDonation" text="Donate" />
+            <TextField fx:id="QuantityTxt_Org_Donation" layoutX="132.0" layoutY="114.0" onAction="#Quantity_Txt_OrgDonation" promptText="Quantity" />
+            <Button fx:id="DonateBtn_Org_Donation" layoutX="179.0" layoutY="175.0" mnemonicParsing="false" onAction="#Donate_Btn_OrgDonation" text="Donate" />
+            <FontAwesomeIconView fill="WHITE" glyphName="DOLLAR" layoutX="108.0" layoutY="133.0" size="20" wrappingWidth="15.857142448425293" />
+            <Label layoutX="132.0" layoutY="46.0" prefHeight="17.0" prefWidth="183.0" text="Please Donate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

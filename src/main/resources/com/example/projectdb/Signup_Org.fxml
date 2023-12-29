@@ -1,24 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectdb.SignUp_Org_Controller">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0">
+      <ImageView cache="true" fitHeight="500.0" fitWidth="700.0" mouseTransparent="true" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Images/360_F_285562393_6qKnDTHWmOHjMo8hCC2dp1MIvR0NvTUs.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.8" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: black;">
          <children>
             <TextField fx:id="UserNameTxt_SUp_Org" layoutX="276.0" layoutY="138.0" onAction="#UserNameTxt_SignUp_Org" promptText="UserName" style="-fx-background-radius: 10;" />
             <TextField fx:id="PassTxt_SUp_Org" layoutX="276.0" layoutY="177.0" onAction="#PassTxt_SignUp_Org" promptText="Password" style="-fx-background-radius: 10;" />
             <TextField fx:id="PhNumTxt_SUp_Org" layoutX="276.0" layoutY="217.0" onAction="#PNumTxt_SignUp_Org" promptText="Phone Number" style="-fx-background-radius: 10;" />
             <TextField fx:id="LocTxt_SUp_Org" layoutX="276.0" layoutY="256.0" onAction="#LocTxt_SignUp_Org" promptText="Location" style="-fx-background-radius: 10;" />
             <TextField fx:id="NameTxt_SUp_Org" layoutX="276.0" layoutY="101.0" onAction="#NameTxt_SignUp_Org" promptText="Name" style="-fx-background-radius: 10;" />
-            <Label alignment="CENTER" layoutX="309.0" layoutY="47.0" prefHeight="40.0" prefWidth="69.0" text="SignUP" />
+            <Label alignment="CENTER" layoutX="309.0" layoutY="47.0" prefHeight="40.0" prefWidth="69.0" text="SignUP" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
             <Button layoutX="324.0" layoutY="398.0" mnemonicParsing="false" onAction="#SignUp_Btn_User" text="SignUP" />
             <ComboBox fx:id="OrgTypeCmboBox" layoutX="276.0" layoutY="338.0" onAction="#OrgTypeCmboBox_Signup_Org" prefWidth="150.0" promptText="Organization Type" style="-fx-background-radius: 10;" />
             <TextField fx:id="NumOfEmploTxt_SUp_Org" layoutX="276.0" layoutY="296.0" onAction="#NumOfEmpTxt_SignUp_Org" promptText="Number of employees" style="-fx-background-radius: 10;" />
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="243.0" layoutY="157.0" size="20" wrappingWidth="18.571428298950195" />
+            <FontAwesomeIconView fill="WHITE" glyphName="ID_CARD" layoutX="243.0" layoutY="120.0" size="20" wrappingWidth="18.571428298950195" />
+            <FontAwesomeIconView fill="WHITE" glyphName="KEY" layoutX="243.0" layoutY="196.0" size="20" wrappingWidth="18.571428298950195" />
+            <FontAwesomeIconView fill="WHITE" glyphName="PHONE" layoutX="243.0" layoutY="236.0" size="20" wrappingWidth="18.571428298950195" />
+            <FontAwesomeIconView fill="WHITE" glyphName="MAP_MARKER" layoutX="243.0" layoutY="275.0" size="20" wrappingWidth="18.571428298950195" />
+            <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="243.0" layoutY="315.0" size="20" wrappingWidth="18.571428298950195" />
+            <FontAwesomeIconView fill="WHITE" glyphName="BOOK" layoutX="243.0" layoutY="357.0" size="20" wrappingWidth="18.571428298950195" />
          </children>
       </AnchorPane>
    </children>

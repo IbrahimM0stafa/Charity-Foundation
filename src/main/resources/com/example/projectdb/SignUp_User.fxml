@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectdb.SignUp_User_Controller">
    <children>
-      <TextField fx:id="UserNameTxt_SUp_User" layoutX="276.0" layoutY="151.0" onAction="#UserNameTxt_SignUp_User" promptText="UserName" style="-fx-background-radius: 10;" />
-      <TextField fx:id="PassTxt_SUp_User" layoutX="276.0" layoutY="203.0" onAction="#PassTxt_SignUp_User" promptText="Password" style="-fx-background-radius: 10;" />
-      <TextField fx:id="PhNumTxt_SUp_User" layoutX="276.0" layoutY="244.0" onAction="#PNumTxt_SignUp_User" promptText="Phone Number" style="-fx-background-radius: 10;" />
-      <TextField fx:id="LocTxt_SUp_User" layoutX="276.0" layoutY="283.0" onAction="#LocTxt_SignUp_User" promptText="Location" style="-fx-background-radius: 10;" />
-      <TextField fx:id="NameTxt_SUp_User" layoutX="276.0" layoutY="101.0" onAction="#NameTxt_SignUp_User" promptText="Name" style="-fx-background-radius: 10;" />
-      <Label alignment="CENTER" layoutX="309.0" layoutY="47.0" prefHeight="40.0" prefWidth="69.0" text="SignUP" />
-      <Button layoutX="318.0" layoutY="363.0" mnemonicParsing="false" onAction="#SignUp_Btn_User" text="SignUP" />
-      <TextField fx:id="Job_SUp_User" layoutX="276.0" layoutY="318.0" onAction="#Job_SignUp_User" promptText="Job" style="-fx-background-radius: 10;" />
+      <ImageView cache="true" fitHeight="500.0" fitWidth="700.0" mouseTransparent="true" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Images/360_F_285562393_6qKnDTHWmOHjMo8hCC2dp1MIvR0NvTUs.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="106.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.8" prefHeight="473.0" prefWidth="489.0" style="-fx-background-color: black; -fx-background-radius: 30;">
+         <children>
+            <TextField fx:id="UserNameTxt_SUp_User" layoutX="185.0" layoutY="160.0" onAction="#UserNameTxt_SignUp_User" promptText="UserName" style="-fx-background-radius: 10;" />
+            <TextField fx:id="PassTxt_SUp_User" layoutX="185.0" layoutY="197.0" onAction="#PassTxt_SignUp_User" promptText="Password" style="-fx-background-radius: 10;" />
+            <TextField fx:id="PhNumTxt_SUp_User" layoutX="185.0" layoutY="238.0" onAction="#PNumTxt_SignUp_User" promptText="Phone Number" style="-fx-background-radius: 10;" />
+            <TextField fx:id="LocTxt_SUp_User" layoutX="185.0" layoutY="277.0" onAction="#LocTxt_SignUp_User" promptText="Location" style="-fx-background-radius: 10;" />
+            <TextField fx:id="NameTxt_SUp_User" layoutX="185.0" layoutY="123.0" onAction="#NameTxt_SignUp_User" promptText="Name" style="-fx-background-radius: 10;" />
+            <Label alignment="CENTER" layoutX="218.0" layoutY="47.0" prefHeight="40.0" prefWidth="69.0" text="SignUP" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="227.0" layoutY="363.0" mnemonicParsing="false" onAction="#SignUp_Btn_User" style="-fx-background-radius: 20;" text="SignUP" />
+            <TextField fx:id="Job_SUp_User" layoutX="185.0" layoutY="318.0" onAction="#Job_SignUp_User" promptText="Job" style="-fx-background-radius: 10;" />
+            <FontAwesomeIconView fill="WHITE" glyphName="ID_CARD" layoutX="153.0" layoutY="142.0" size="20" wrappingWidth="18.571428298950195" />
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="153.0" layoutY="179.0" size="20" wrappingWidth="18.571428298950195" />
+            <FontAwesomeIconView fill="WHITE" glyphName="KEY" layoutX="153.0" layoutY="216.0" size="20" wrappingWidth="18.571428298950195" />
+            <FontAwesomeIconView fill="WHITE" glyphName="PHONE" layoutX="153.0" layoutY="257.0" size="20" wrappingWidth="18.571428298950195" />
+            <FontAwesomeIconView fill="WHITE" glyphName="MAP_MARKER" layoutX="153.0" layoutY="296.0" size="20" wrappingWidth="18.571428298950195" />
+            <FontAwesomeIconView fill="WHITE" glyphName="BUILDING" layoutX="153.0" layoutY="337.0" size="20" wrappingWidth="18.571428298950195" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectdb.Login_Controller">
    <children>
-      <Button layoutX="216.0" layoutY="334.0" mnemonicParsing="false" onAction="#Log_In" text="Log in" />
-      <Button layoutX="301.0" layoutY="334.0" mnemonicParsing="false" onAction="#Sign_up" text="Sign up" />
-      <TextField fx:id="Pass_Txt" layoutX="255.0" layoutY="260.0" onAction="#Password" promptText="Password" style="-fx-background-radius: 30;" />
-      <TextField fx:id="UserName_Txt" layoutX="255.0" layoutY="207.0" onAction="#UserName" promptText="UserName" style="-fx-background-radius: 30;" />
-      <Button fx:id="SignUp_Btn_Org" layoutX="386.0" layoutY="334.0" mnemonicParsing="false" onAction="#SignUp_Org" text="Sign up as Organization" />
+      <ImageView cache="true" fitHeight="500.0" fitWidth="707.0" layoutX="-1.0" layoutY="-1.0" mouseTransparent="true" pickOnBounds="true" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="-1.0">
+         <image>
+            <Image url="@../../../Images/360_F_285562393_6qKnDTHWmOHjMo8hCC2dp1MIvR0NvTUs.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="107.0" layoutY="35.0" opacity="0.8" pickOnBounds="false" prefHeight="431.0" prefWidth="487.0" style="-fx-background-color: black; -fx-background-radius: 30;">
+         <children>
+            <Button layoutX="226.0" layoutY="233.0" mnemonicParsing="false" onAction="#Log_In" style="-fx-background-radius: 15;" text="Log in" />
+            <Button layoutX="222.0" layoutY="278.0" mnemonicParsing="false" onAction="#Sign_up" style="-fx-background-radius: 20;" text="Sign up" />
+            <TextField fx:id="Pass_Txt" layoutX="186.0" layoutY="183.0" onAction="#Password" promptText="Password" style="-fx-background-radius: 30;" />
+            <TextField fx:id="UserName_Txt" layoutX="186.0" layoutY="134.0" onAction="#UserName" promptText="UserName" style="-fx-background-radius: 30;" />
+            <Button fx:id="SignUp_Btn_Org" layoutX="189.0" layoutY="323.0" mnemonicParsing="false" onAction="#SignUp_Org" style="-fx-background-radius: 20;" text="Sign up as Organization" />
+            <Label layoutX="205.0" layoutY="58.0" prefHeight="35.0" prefWidth="122.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
