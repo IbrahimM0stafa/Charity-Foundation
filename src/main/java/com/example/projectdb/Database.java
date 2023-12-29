@@ -221,6 +221,38 @@ public class Database {
         }
         return null;
     }
+    public Resources AddDonation(String name , int amount) throws SQLException {
+        Connection c = null;
+        Resources resources;
+        int availableAmount;
+        try {
+            c = this.getConnection();
+
+            PreparedStatement selectStatement = c.prepareStatement("SELECT AMOUNT FROM Resources WHERE NAME = ?");
+            selectStatement.setString(1,name);
+            ResultSet resultSet = selectStatement.executeQuery();
+
+            if (resultSet.next()) {
+                availableAmount = resultSet.getInt("AMOUNT");
+                availableAmount+=amount;
+
+                PreparedStatement updateStatement = c.prepareStatement("UPDATE Resources SET AMOUNT = ? WHERE NAME = ?");
+                updateStatement.setInt(1, availableAmount);
+                updateStatement.setString(2, name);
+                resources = new Resources(availableAmount);
+                updateStatement.executeUpdate();
+            } else {
+                throw new RuntimeException(" not found.");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+        }
+        return null;
+    }
 
 
 

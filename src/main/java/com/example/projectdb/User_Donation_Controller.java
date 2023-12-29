@@ -2,9 +2,10 @@ package com.example.projectdb;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.layout.VBox;
+
+import java.sql.SQLException;
 
 public class User_Donation_Controller {
 
@@ -20,11 +21,37 @@ public class User_Donation_Controller {
     @FXML
     private ComboBox<String> TypeCmboBox_User_Donation;
 
+    String selectedName;
+
     @FXML
     public void initialize() {
-        // This method is automatically called after the FXML file has been loaded
-        // It's a good place to set up initial state or load data
-        TypeCmboBox_User_Donation.getItems().addAll("Food", "Drugs", "Clothes","Funds");
+
+        TypeCmboBox_User_Donation.getItems().addAll("Food", "Medicine", "Clothes", "Funds");
+        Resources resources = new Resources();
+        TypeCmboBox_User_Donation.setOnAction(event -> {
+            selectedName = TypeCmboBox_User_Donation.getSelectionModel().getSelectedItem();
+        });
+
+        DonateBtn_User_Donation.setOnAction(event -> {
+            try {
+                resources.updateresources(selectedName, Integer.parseInt(QuantityTxt_User_Donation.getText()));
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+            Dialog<ButtonType> dialog = new Dialog<>();
+            dialog.setHeaderText(null);
+
+            Label contentLabel = new Label("Thanks for donation!");
+
+            VBox content = new VBox(contentLabel);
+            dialog.getDialogPane().setContent(content);
+
+            dialog.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
+
+            dialog.showAndWait();
+        });
     }
 
     @FXML
