@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectdb.Login_Controller">
+   <children>
+      <Button layoutX="216.0" layoutY="334.0" mnemonicParsing="false" onAction="#Log_In" text="Log in" />
+      <Button layoutX="301.0" layoutY="334.0" mnemonicParsing="false" onAction="#Sign_up" text="Sign up" />
+      <TextField fx:id="Pass_Txt" layoutX="255.0" layoutY="260.0" onAction="#Password" promptText="Password" style="-fx-background-radius: 30;" />
+      <TextField fx:id="UserName_Txt" layoutX="255.0" layoutY="207.0" onAction="#UserName" promptText="UserName" style="-fx-background-radius: 30;" />
+      <Button fx:id="SignUp_Btn_Org" layoutX="386.0" layoutY="334.0" mnemonicParsing="false" onAction="#SignUp_Org" text="Sign up as Organization" />
+   </children>
+</AnchorPane>

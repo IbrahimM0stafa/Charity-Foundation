@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectdb.SignUp_Org_Controller">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <TextField fx:id="UserNameTxt_SUp_Org" layoutX="276.0" layoutY="138.0" onAction="#UserNameTxt_SignUp_Org" promptText="UserName" style="-fx-background-radius: 10;" />
+            <TextField fx:id="PassTxt_SUp_Org" layoutX="276.0" layoutY="177.0" onAction="#PassTxt_SignUp_Org" promptText="Password" style="-fx-background-radius: 10;" />
+            <TextField fx:id="PhNumTxt_SUp_Org" layoutX="276.0" layoutY="217.0" onAction="#PNumTxt_SignUp_Org" promptText="Phone Number" style="-fx-background-radius: 10;" />
+            <TextField fx:id="LocTxt_SUp_Org" layoutX="276.0" layoutY="256.0" onAction="#LocTxt_SignUp_Org" promptText="Location" style="-fx-background-radius: 10;" />
+            <TextField fx:id="NameTxt_SUp_Org" layoutX="276.0" layoutY="101.0" onAction="#NameTxt_SignUp_Org" promptText="Name" style="-fx-background-radius: 10;" />
+            <Label alignment="CENTER" layoutX="309.0" layoutY="47.0" prefHeight="40.0" prefWidth="69.0" text="SignUP" />
+            <Button layoutX="324.0" layoutY="398.0" mnemonicParsing="false" onAction="#SignUp_Btn_User" text="SignUP" />
+            <ComboBox fx:id="OrgTypeCmboBox" layoutX="276.0" layoutY="338.0" onAction="#OrgTypeCmboBox_Signup_Org" prefWidth="150.0" promptText="Organization Type" style="-fx-background-radius: 10;" />
+            <TextField fx:id="NumOfEmploTxt_SUp_Org" layoutX="276.0" layoutY="296.0" onAction="#NumOfEmpTxt_SignUp_Org" promptText="Number of employees" style="-fx-background-radius: 10;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
